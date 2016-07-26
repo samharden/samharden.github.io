@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en" font ="timesnewroman">
+
+
+
+
+<head>
+	<meta charset="utf-8" />
+		<title>FLORIDA MARCHMAN ACT PETITION Report of Law Enforcement Officer Initiating 
+		Protective Custody</title>
+	<style>
+		@media print
+		{
+		    select {
+ 			   -webkit-appearance: none;
+ 			   -moz-appearance: none;
+ 			   appearance: none;
+ 			   border: none; /* If you want to remove the border as well */
+ 			   background: none;
+ 			   }
+		}
+
+
+			article, aside, dialog, figure, footer, header,
+			hgroup, menu, nav, section {display:block;}
+	</style>
+
+<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container">
+	<form name="form1" action="" novalidate>
+		<br>
+		<h2><p style="text-align:center;font-size:18px; arial font"><b>
+		REPORT OF LAW ENFORCEMENT OFFICER INITIATING PROTECTIVE CUSTODY<br>
+		IN AND FOR HILLSBOROUGH COUNTY, FLORIDA</b></p>
+		</h2>
+	<br>
+	<br>
+<p>
+I, <input type="text" name="LEO_Name" placeholder="Name of Law Enforcement Officer" size=42>, am a law enforcement officer certified by the State of Florida. I have good faith reason to believe that
+<input type="text" name="respondentName" placeholder="Name of Person" size="42" maxlength="42"> appears to meet the following criteria for protective custody:
+</p>
+<p>[<input required="required" type="checkbox">] He/she is substance abuse impaired and, because of such impairment:</p>
+<p>[<input required="required" type="checkbox">] Has lost the power of self-control with respect to substance use; <b>and either:</b></p>
+<p>[<input required="required" type="checkbox">] Has inflicted, or threatened or attempted to inflict, or unless admitted is likely to inflict, physical harm on
+himself or herself or another; <b>or </b></p>
+<p>[<input required="required" type="checkbox">] Is in need of substance abuse services and, by reason of substance abuse impairment, his or her judgment
+has been so impaired that the person is incapable of appreciating his or her need for such services and of
+making a rational decision in regard thereto; however, mere refusal to receive such services does not
+constitute evidence of lack of judgment with respect to his or her need for such services. </p>
+<br>
+<p> Circumstances which support this opinion:</p>
+<textarea class="form-control" rows="3"></textarea>
+<br>
+<p>____________________________________   <select name="month" id="month" onchange="" size="">
+   				 <option value="01">January</option>
+   				 <option value="02">February</option>
+  				 <option value="03">March</option>
+    			<option value="04">April</option>
+    			<option value="05">May</option>
+  			  	<option value="06">June</option>
+    			<option value="07">July</option>
+    			<option value="08">August</option>
+    			<option value="09">September</option>
+    			<option value="10">October</option>
+    			<option value="11">November</option>
+    			<option value="12">December</option>
+			</select>
+
+<!-- Day dropdown -->
+			<select name="day" id="day" onchange="" size="1">
+    			<option value="01">01</option>
+    			<option value="02">02</option>
+    			<option value="03">03</option>
+    			<option value="04">04</option>
+    			<option value="05">05</option>
+    			<option value="06">06</option>
+    			<option value="07">07</option>
+    			<option value="08">08</option>
+    			<option value="09">09</option>
+    			<option value="10">10</option>
+    			<option value="11">11</option>
+    			<option value="12">12</option>
+    			<option value="13">13</option>
+    			<option value="14">14</option>
+    			<option value="15">15</option>
+    			<option value="16">16</option>
+    			<option value="17">17</option>
+    			<option value="18">18</option>
+    			<option value="19">19</option>
+    			<option value="20">20</option>
+    			<option value="21">21</option>
+    			<option value="22">22</option>
+    			<option value="23">23</option>
+    			<option value="24">24</option>
+    			<option value="25">25</option>
+    			<option value="26">26</option>
+    			<option value="27">27</option>
+    			<option value="28">28</option>
+    			<option value="29">29</option>
+    			<option value="30">30</option>
+    			<option value="31">31</option>
+		</select> 
+	 	<select name="hour" id="hour" onchange="" size="">
+    <option value="01">1:00</option>
+    <option value="02">2:00</option>
+    <option value="03">3:00</option>
+    <option value="04">4:00</option>
+    <option value="05">5:00</option>
+    <option value="06">6:00</option>
+    <option value="07">7:00</option>
+    <option value="08">8:00</option>
+    <option value="09">9:00</option>
+    <option value="10">10:00</option>
+    <option value="11">11:00</option>
+    <option value="12">12:00</option>
+</select><select name="ampm" id="ampm" onchange="" size="">
+    <option value="01">AM</option>
+    <option value="02">PM</option>
+
+</select>
+<input type="text" name="YEAR" placeholder="YEAR" size="5" maxlength="5">
+</p>
+<p>
+(Signature of Law Enforcement Officer)
+</p>
+<p>
+<input type="text" name="LEO_Name" placeholder="Printed Name of Law Enforcement Officer" size="42" maxlength="42">  <input type="text" name="LEO_Agency_Name" placeholder="Name of Law Enforcement Agency" size="42" maxlength="42">
+</p>
+<p>
+<input type="text" name="LEO_Badge_or_ID" placeholder="Badge or ID Number" size="42" maxlength="42">  <input type="text" name="LEO_Case_Number" placeholder="Law Enforcement Case Number" size="42" maxlength="42">
+</p>
+<br>
+<b>
+<p class="two">
+TRANSPORTATION TO SUBSTANCE ABUSE PROVIDER:	
+</p>
+<p>
+Location Found:<input type="text" name="Location_found" placeholder="Fill in where the person was found" size="42" maxlength="42"> Taken To: <input type="text" name="Taken_to" placeholder="Fill in where the person was taken" size="42" maxlength="42">
+</p>
+<p>
+Family members or others present when person was taken into custody:
+</p>
+<input type="text" name="Fam_mem_name" placeholder="Name of Family Member" size="20" maxlength="20">|
+<input type="text" name="Fam_mem_address" placeholder="Address" size="30" maxlength="30">|
+<input type="text" name="Fam_mem_relationship" placeholder="Relationship" size="15" maxlength="15">|
+<input type="text" name="Fam_mem_phone" placeholder="Phone #" size="14" maxlength="14">
+</p>
+</p>
+<input type="text" name="Fam_mem_name" placeholder="Name of Family Member" size="20" maxlength="20">|
+<input type="text" name="Fam_mem_address" placeholder="Address" size="30" maxlength="30">|
+<input type="text" name="Fam_mem_relationship" placeholder="Relationship" size="15" maxlength="15">|
+<input type="text" name="Fam_mem_phone" placeholder="Phone #" size="14" maxlength="14">
+</p>
+Next of Kin, if known:
+</p>
+<input type="text" name="Fam_mem_name" placeholder="Name of Family Member" size="20" maxlength="20">|
+<input type="text" name="Fam_mem_address" placeholder="Address" size="30" maxlength="30">|
+<input type="text" name="Fam_mem_relationship" placeholder="Relationship" size="15" maxlength="15">|
+<input type="text" name="Fam_mem_phone" placeholder="Phone #" size="14" maxlength="14">
+</p>
+<p>
+Indicate personal knowledge by family members and others about the person’s condition:
+</p>
+<p>
+<textarea class="form-control" rows="3"></textarea>
+</p>
+
+
+</div> <!-- body size div tag closeout -->
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html>
