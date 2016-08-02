@@ -351,27 +351,27 @@ width: 65%;
 margin: 1em 0;
 border-collapse:
 collapse; border-spacing: 0;
-display: block;
+
 }
 
 td, th {
 border: 1px solid; /* No more visible border */
 height: 30px;
 transition: all 0.3s; /* Simple transition for hover effect */
-display: inline-block;
+
 }
 
 th {
 background: #DFDFDF; /* Darken header a bit */
 font-weight: bold;
 text-align: center;
-display: inline-block;
+
 }
 
 td {
 background: #FAFAFA;
 text-align: center;
-display: inline-block;
+
 }
 
 /* Cells in even rows (2,4,6...) are one color */
