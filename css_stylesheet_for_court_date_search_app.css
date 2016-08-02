@@ -368,7 +368,7 @@ font-weight: bold;
 td {
 background: #FAFAFA;
 text-align: center;
-display: inline-block; 
+
 }
 
 /* Cells in even rows (2,4,6...) are one color */
