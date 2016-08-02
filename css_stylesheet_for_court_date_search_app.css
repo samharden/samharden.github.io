@@ -357,6 +357,7 @@ td, th {
 border: 1px solid; /* No more visible border */
 height: 30px;
 transition: all 0.3s; /* Simple transition for hover effect */
+display: inline-block; 
 }
 
 th {
@@ -367,6 +368,7 @@ font-weight: bold;
 td {
 background: #FAFAFA;
 text-align: center;
+display: inline-block; 
 }
 
 /* Cells in even rows (2,4,6...) are one color */
