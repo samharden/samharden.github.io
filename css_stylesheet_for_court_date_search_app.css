@@ -365,12 +365,13 @@ th {
 background: #DFDFDF; /* Darken header a bit */
 font-weight: bold;
 text-align: center;
+display: inline-block;
 }
 
 td {
 background: #FAFAFA;
 text-align: center;
-
+display: inline-block;
 }
 
 /* Cells in even rows (2,4,6...) are one color */
