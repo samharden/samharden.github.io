@@ -86,14 +86,14 @@ The forms.py file is where your forms are created. You should see two forms in t
 <p>
 Now you have a "problem" form you will be able to use on your form. But to get input and use the response on the form it's going to take a little bit more work. Go aead and open up your views.py file. 
 </p>
-<p>Views.py:</p>
+<p><b>Views.py:</b></p>
 <p>
 The views.py file is what routes the forms you create in forms.py into your two web pages, index.html and results.html. Look down on line 12, where you should see "@app.route('/index', methods=['GET', 'POST'])" and 26, where you should see "@app.route('/results', methods=['GET', 'POST'])" Think of these two statements and what's indented after them as teling the program what to do on those web pages.
 </p>
 <p>
 We need to add our "problem" form to both, so go ahead and type the following in on line 18, using the same indentation: "session['problem'] = form.problem._value()", and on line 32 type in "problem = session['problem']" These take your "problem form and route it to both pages. You're getting the problem input from the index.html page as a "session value" and then taking it over to the results page where you can then use it. Go down to the line 38 or 39 and add "problem=problem" after "respondent=respondent," but don't forget to put a comma after the second respondent or you'll throw an error. 
 </p>
-<p>Index.html</p>
+<p><b>Index.html</b></p>
 <p>
 Let's go ahead and get your new problem form up and on the interwebz, and by that I mean displayed on your index and results pages. Open up your index.html file. You should be able to tell where is is actually displaying the forms just by reading down the file. Look for the {{}} brackets, like where you see "What is your name? ... {{ form.petitioner(size=40) }}" Go ahead and make a new input form like the ones you see on the page. Here's an example:</p>
 <p>
@@ -101,7 +101,7 @@ What is your problem? ... {{ form.problem(size=40) }}
 </p>
 <p> Do you see how the lines of text are seperated by those funny "< p >" things? Those are formatting signals in html to the browser, telling the browser how to display the text on the page. Play aroung with them and see how they work to space out text. What do you think the < br > one does?
 </p>
-<p>Results.html</p>
+<p><b>Results.html</b></p>
 <p>
 Now open your results.hmtl file. See how it's formatting the text to display the actual court form? Also notice how {{respondent}} and {{petitioner}} are both in there, and are where those inputs are displayed? Let's go ahead and add a {{problem}} in there, whereever you'd like, say at the first numbered paragraph, like so: "My big problem is {{problem}}"
 </p>
