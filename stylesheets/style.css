@@ -853,7 +853,7 @@ body.error404 .main {
  * -----------------------------------------------------------------------------
  */
 .header {
-  min-height: 500px;
+  min-height: 300px;
   background: fixed no-repeat center center;
   background-size: cover;
   position: relative;
