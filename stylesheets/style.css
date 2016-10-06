@@ -2605,6 +2605,12 @@ li > div.comment {
     width: 78%;
   }
 }
+
+.chart {
+  width: 100%; 
+  min-height: 450px;
+}
+
 /**
  * 20.0 - Front page
  *
