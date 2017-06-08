@@ -51,35 +51,35 @@
 in to an email server and downloading a specific email attachment in Python 3 - anywhere on the Information
 Super-Highway, I thought I'd post my solution here.</p>
 
-<code>
-  import imaplib
-  # Log in to the mail server with imaplib
-  mail = imaplib.IMAP4_SSL('mailserver')
-  mail.login('user_id','password')
-  mail.select("INBOX")
-  result, data = mail.uid('search',None, "ALL")
+<blockquote>
+  import imaplib<br>
+  # Log in to the mail server with imaplib<br>
+  mail = imaplib.IMAP4_SSL('mailserver')<br>
+  mail.login('user_id','password')<br>
+  mail.select("INBOX")<br>
+  result, data = mail.uid('search',None, "ALL")<br>
+  <br><br>
+  # this identifies the latest email in the inbox. To get the next-to-latest change -1 to -2 and so forth<br>
+  email_uid = data[0].split()[-1]<br>
   
-  # this identifies the latest email in the inbox. To get the next-to-latest change -1 to -2 and so forth
-  email_uid = data[0].split()[-1]
-  
-  result, data = mail.uid('fetch', email_uid, '(RFC822)')
-  raw_email = data[0][1].decode('utf-8')
-  email_message = email.message_from_string(raw_email)
-  
-  # let's find out about our email - 
-  print(email_message['To'])
-  print(email_message['From'])
-  print(email_message.items())
-  # get the payload - basically the parts of the email. 
-  payload = email_message.get_payload()
-  print(payload) # debug with print statements, like a pro
-  
-  # 0 is typically the body of the email, 1 is the attachment, 
-  # assuming you only have one attachment that you want. 
-  attachment = payload[1]
-  your_filename = 'your-filename.whatever'
-  open(your_filename, 'wb').write(attachment.get_payload(decode=True))
-  </code>
+  result, data = mail.uid('fetch', email_uid, '(RFC822)')<br>
+  raw_email = data[0][1].decode('utf-8')<br>
+  email_message = email.message_from_string(raw_email)<br>
+  <br><br>
+  # let's find out about our email - <br>
+  print(email_message['To'])<br>
+  print(email_message['From'])<br>
+  print(email_message.items())<br>
+  # get the payload - basically the parts of the email. <br>
+  payload = email_message.get_payload()<br>
+  print(payload) # debug with print statements, like a pro<br>
+  <br><br>
+  # 0 is typically the body of the email, 1 is the attachment, <br>
+  # assuming you only have one attachment that you want. <br>
+  attachment = payload[1]<br>
+  your_filename = 'your-filename.whatever'<br>
+  open(your_filename, 'wb').write(attachment.get_payload(decode=True))<br>
+  </blockquote>
 
 <p> As always, YMMV</p>
 
