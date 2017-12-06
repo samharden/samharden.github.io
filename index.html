@@ -5,8 +5,13 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css_stylesheet_for_court_date_search_app.css" media="screen">
-
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+              integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css"
+              rel="stylesheet">
 <style type="text/css" media="screen">
 	html { margin: 40px 40px 40px 40px !important; }
 	* html body { margin: 40px 40px 40px 40px !important; }
@@ -25,10 +30,60 @@
   ga('send', 'pageview');
 
 </script>
-	  
-	  
+
+
     <title>Samharden.GitHub.io</title>
   </head>
+
+  <body class="main_body_bg_color">
+  <div class="wrapper">
+
+      <div id="mainbody" class="main_container">
+
+        <div class="container">
+            <div class="col-md-8 col-sm-6 col-xs-12" style="width:95%">
+              <!-- <div class="content-inner"> -->
+                <h1 ><img src="{% static 'images/finch.png'  %}" style="width:79px"><br>Finch</h1>
+                <p class="lead">An open source legal case management software project.</p>
+                <div class="details-list">
+                  <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                      <h3>Deploy your own Case Management Software.</h3>
+                      <p>Finch is free to use and completely open source. It's the first
+                        legal case management software offered
+                      under the MIT License.</p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                      <h3>Written in accessible languages.</h3>
+                      <p>Finch is written in Python 3's Django framework as full-stack web
+                        application, with simple
+                      html, css, and js. It can easily be modified and deployed to Heroku,
+                    AWS, or Cloud Engine.</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                      <h3>Contribute</h3>
+                      <p>Want to contribute to the development of Finch? Is there
+                        a useful feature you want? Head over to
+                      the <a href="https://github.com/lancorp/finch-open-cms">Github Repo.</a></p>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                      <h3>Contact</h3>
+                      <p>If you have any questions please feel free to contact me at
+                      my <a href="mailto:sam@lancorp.co">email address</a>.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
 
   <body>
     <div id="container" margin="2cm 4cm 3cm 4cm">
@@ -49,27 +104,27 @@
           <h3>
 <a id="about-me" class="anchor" href="#about-me" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About Me:</h3>
 
-<p>I'm a founder of <a href="http://www.lancorp.co">Legal Analytics Corporation</a> and 'Jack of all Trades' at <a href="http://www.mycourtcase.org">MyCourtCase.org</a>, 
-a website that gives average people the ability to see the results of hundreds of thousands of past criminal cases 
+<p>I'm a founder of <a href="http://www.lancorp.co">Legal Analytics Corporation</a> and 'Jack of all Trades' at <a href="http://www.mycourtcase.org">MyCourtCase.org</a>,
+a website that gives average people the ability to see the results of hundreds of thousands of past criminal cases
 like theirs, and make an informed decision about what to do in their case. </p>
 
 <p>Most recently I deployed a web app that lets people in Hillsborough County easily find out when they need to be in court, that's called <a href="https://courtdatesearch.herokuapp.com/index">Court Date Search</a>. Tampa developer <a href="https://github.com/mjturtora">Mike Turtora</a> collaborated on this project.</p>
-		
+
 <h3>
 <a id="current-projects" class="anchor" href="#current-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Current Projects:</h3>
 
-<p>I've been working to put Florida's court forms online in an easy-to-use format, starting with Florida's mental health forms. As I update them I'll post them here: 
+<p>I've been working to put Florida's court forms online in an easy-to-use format, starting with Florida's mental health forms. As I update them I'll post them here:
 
-<br> 
+<br>
 <list>
 	1. <a href="https://samharden.github.io/florida_baker_act_petition.html">Florida Baker Act Petition</a><br>
 
 	2. <a href="https://samharden.github.io/florida_marchman_act_petition.html">Florida Marchman Act Petition</a><br>
-	
+
 	3. <a href="https://samharden.github.io/florida_marchman_act_LEO_form.html">Florida Law Enforcement Marchman Act Form</a> <br>
-	
+
 	4. <a href="https://github.com/samharden/flask_court_form_maker">Court Form Builder Using Flask and Python</a>. <b>A link to my tutorial is here: <a href="https://samharden.github.io/court-form-maker/intro.html">Court Form Maker Tutorial - Intro</a></b>    </list><br>
-	
+
 
 	<p>Credit goes to to Max Pietsch at USF for his help in putting these into Bootstrap - his github is <a href="https://github.com/maximumpeaches">here</a>, to Al Brunner for creating a <a href="https://en.wikipedia.org/wiki/Marchman_Act">Wikipedia page</a> for Florida's Marchman Act petition, and to Arthur Alton for far too many hours of work on this.
   	</p>
@@ -80,7 +135,7 @@ like theirs, and make an informed decision about what to do in their case. </p>
 <p><a href="https://samharden.github.io/blog/7-1-2016.html">7/1/16 - Starting Out</a> </p>
 <p><a href="https://samharden.github.io/blog/7-13-2016.html">7/13/16 - Lawyers and the Fear of Failure</a> </p>
 <p><a href="https://samharden.github.io/blog/11-1-16.html">11/1/16 - We're Failing at LegalTech</a> </p>
-<p><a href="https://samharden.github.io/blog/12-6-16.html">12/6/16 - Functional Court Software is Essential to Access-to-Justice</a> </p>		
+<p><a href="https://samharden.github.io/blog/12-6-16.html">12/6/16 - Functional Court Software is Essential to Access-to-Justice</a> </p>
 <h3>
 <a id="contact-me" class="anchor" href="#contact-me" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact Me:</h3>
 
@@ -93,7 +148,7 @@ like theirs, and make an informed decision about what to do in their case. </p>
           This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
         </footer>
 
-        
+
       </div>
     </div>
   </body>
