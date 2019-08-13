@@ -1,101 +1,101 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-              integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css"
-              rel="stylesheet">
-<style type="text/css" media="screen">
-	html { margin: 40px 40px 40px 40px !important; }
-	* html body { margin: 40px 40px 40px 40px !important; }
-	@media screen and ( max-width: 782px ) {
-		html { margin: 40px 40px 40px 40px !important; }
-		* html body { margin: 40px 40px 40px 40px !important; }
-	}
-</style>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+---
+layout: page
+title: Sam Harden
+subtitle: Lawyer / Fullstack Developer / Legal Technology Optimist
+use-site-title: true
+---
 
-  ga('create', 'UA-86843724-1', 'auto');
-  ga('send', 'pageview');
+<div class="post-entry-container">
+  <div class="post-entry">
+    <h4>About me:</h4>
+    <p>I'm a lawyer who decided to teach himself to code, because I'm a believer that technology
+      can help bridge the access-to-justice gap. I work primarily in Python,
+      but have also worked in Go and NodeJS.</p>
+      <p>I'm constantly building and experimenting with ways to apply technology to law.
+        Check out my <a href="">github repo</a> for examples of what I've built.
+      </p>
+      <h4>My work:</h4>
+      <p>
+        I work with vLex, a global legal research company, Measures for Justice,
+        and the Florida Justice Technology Center.
+      </p>
+      <h4>Docassemble videos:</h4>
+      <p>
+        I've been creating instructional videos about how to set up and use
+        Docassemble, the open-source document assembly program. You can check out
+        the <a href="https://www.youtube.com/channel/UCCFR4rpeXQIv2KwcvaPwweQ">YouTube channel</a>.
+      </p>
+  </div>
 
-</script>
+</div>
 
+<!-- <div style="text-align:center">
+  <h1>Blog</h1>
+</div>
+<hr class="small">
 
-    <title>Samharden.GitHub.io</title>
-  </head>
+<div class="posts-list">
+  {% for post in paginator.posts %}
+  <article class="post-preview">
+    <a href="{{ post.url | relative_url }}">
+	  <h2 class="post-title">{{ post.title }}</h2>
 
-  <body class="main_body_bg_color">
-  <div class="wrapper">
+	  {% if post.subtitle %}
+	  <h3 class="post-subtitle">
+	    {{ post.subtitle }}
+	  </h3>
+	  {% endif %}
+    </a>
 
-      <div id="mainbody" class="main_container">
+    <p class="post-meta">
+      Posted on {{ post.date | date: "%B %-d, %Y" }}
+    </p>
 
-        <div class="container">
-            <div class="col-md-8 col-sm-6 col-xs-12" style="width:95%">
-              <!-- <div class="content-inner"> -->
-              <h1>Sam Harden</h1>
-                <p class="lead">Lawyer / Fullstack Developer / Legal Technology Optimist</p>
+    <div class="post-entry-container">
+      {% if post.image %}
+      <div class="post-image">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.image | relative_url }}">
+        </a>
+      </div>
+      {% endif %}
+      <div class="post-entry">
+        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
+        {% assign excerpt_word_count = post.excerpt | number_of_words %}
+        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
+          <a href="{{ post.url | relative_url }}" class="post-read-more">[Read&nbsp;More]</a>
+        {% endif %}
+      </div>
+    </div>
 
-                    <h2>About me:</h2>
-                    <div class="details-list">
-                      <div class="row">
-                    <div class="col-sm-6 col-xs-12">
-                      <h3>Background:</h3>
-                      <p class="lead">I'm a lawyer who decided to teach himself to code, because I'm
-                      a believer that technology can help bridge the access-to-justice gap.
-                    I work primarily in Python, but have also worked in Go and NodeJS.</p>
-                    </div>
-                    <div class="col-sm-6 col-xs-12">
-                      <h3>I like to get my hands dirty:</h3>
-                      <p class="lead">I'm constantly building and experimenting with ways to
-                        apply technology to law. Check out my projects
-                      for examples of what I've built. You can also take a look
-                      at my <a href="https://github.com/samharden">github repo here.</a></p>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-6 col-xs-12">
-                      <h3>Contact:</h3>
-                      <p class="lead">You can find me on Twitter at
-                        <a href="https://twitter.com/samuelharden">@samuelharden</a>
-                      or email me at <a href="mailto:samharden@gmail.com">my email address.</a></p>
-                    </div>
-                    <div class="col-sm-6 col-xs-12">
-                      <h3>Awards and such:</h3>
-                      <p class="lead">I'm honored to have been a <a href="https://www.fastcase.com/fastcase50/?class=2017">Fastcase 50 recipient in 2017</a>.
-                        I've also been a <a href="https://lawyerist.com/115774/podcast-70-sam-harden/">guest on the Lawyerist Podcast</a> to
-                        talk about my work. The ABA Journal
-                        <a href="http://www.abajournal.com/magazine/article/law_firm_data_legaloptics_nuvorce">
-                          profiled my LegalOptics startup</a> in October of 2017. I've <a href="https://lawyerist.com/author/sam-harden/">
-                            written a good bit
-                          for Lawyerist</a> about legal technology and small firm practice.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br><br>
+    {% if post.tags.size > 0 %}
+    <div class="blog-tags">
+      Tags:
+      {% if site.link-tags %}
+      {% for tag in post.tags %}
+      <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+      {% endfor %}
+      {% else %}
+        {{ post.tags | join: ", " }}
+      {% endif %}
+    </div>
+    {% endif %}
 
+   </article>
+  {% endfor %}
+</div>
 
-<br><br>
-<!--
-<p><a href="https://samharden.github.io/blog/7-1-2016.html">7/1/16 - Starting Out</a> </p>
-<p><a href="https://samharden.github.io/blog/7-13-2016.html">7/13/16 - Lawyers and the Fear of Failure</a> </p>
-<p><a href="https://samharden.github.io/blog/11-1-16.html">11/1/16 - We're Failing at LegalTech</a> </p>
-<p><a href="https://samharden.github.io/blog/12-6-16.html">12/6/16 - Functional Court Software is Essential to Access-to-Justice</a> </p>
-<h3> -->
-
-  </body>
-</html>
+{% if paginator.total_pages > 1 %}
+<ul class="pager main-pager">
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | relative_url }}">&larr; Newer Posts</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | relative_url }}">Older Posts &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %} -->
