@@ -6,16 +6,5 @@
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
-      <item>
-        <title>The FJTC is Dead</title>
-        <description>
-          Long Live the FJTC - 
-          On September 30 the Florida Justice Technology Center effectively shut down. I worked as a Project Manager then as Dev Team Leader for the FJTC for nearly two years. I left the FJTC in August to work with the legal research company vLex. A note about my work - I’m...
-        </description>
-        <pubDate>Wed, 09 Oct 2019 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/2019-10-09-FJTC/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019-10-09-FJTC/</guid>
-      </item>
-    
   </channel>
 </rss>
